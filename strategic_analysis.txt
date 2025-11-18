@@ -1,0 +1,19 @@
+Top 5 global drivers (SHAP ranking):
+1. free_cash_flow_ratio  (mean|SHAP|=0.4252)
+2. return_on_equity  (mean|SHAP|=0.4060)
+3. quick_ratio  (mean|SHAP|=0.3815)
+4. interest_coverage_ratio  (mean|SHAP|=0.3753)
+5. cash_ratio  (mean|SHAP|=0.3735)
+
+Directional interpretation (expected):
+- free_cash_flow_ratio: ambiguous/depends
+- return_on_equity: ambiguous/depends
+- quick_ratio: ambiguous/depends
+- interest_coverage_ratio: decreases default risk
+- cash_ratio: ambiguous/depends
+
+Strategic recommendations:
+1. Auto-flag top-decile accounts by predicted probability for manual underwriting and request the top 3 SHAP drivers for each flagged account.
+2. For accounts where cash-flow metrics drive risk, request near-term cash flow projections and covenant updates.
+3. Investigate cases where SHAP and LIME disagree — these are potential blind spots or data issues requiring manual review.
+4. Save SHAP values per decision for auditability and regulatory traceability; retrain monthly or on data drift.
