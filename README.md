@@ -1,11 +1,12 @@
 # Interpretable-Machine-Learning-for-High-Dimensional-Financial-Risk-Scoring-using-SHAP-and-LIME
 Interpretable Machine Learning for High-Dimensional Financial Risk Scoring (SHAP + LIME)
-📌 Project Overview
+
+# 📌 Project Overview
 
 This project builds a highly interpretable machine-learning pipeline for corporate default risk prediction using a synthetic high-dimensional financial dataset.
 The focus is not only model accuracy but also deep explainability, which is crucial for regulated financial environments (e.g., credit committees, banking oversight, Basel compliance).
 
-The dataset includes core financial ratios such as:
+# The dataset includes core financial ratios such as: 
 
     Liquidity ratios: current_ratio, quick_ratio, cash_ratio
     Leverage metrics: debt_equity_ratio, interest_coverage_ratio
